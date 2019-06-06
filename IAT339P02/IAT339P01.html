@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Style Guide P02</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1>Style Guide P02</h1>
+
+
+
+    <nav>
+
+      <p>
+        Go to:
+        <a href="http://www.sketch.cloud/s/gbbrd">Wireframes</a>,
+        <a href="Citation.html">Citation</a>
+        <a href="Sitemap.html">Sitemap</a>
+      </p>
+
+      <p>
+        Go to:
+        <a href="#interactive_elements">Interactive Elements</a>,
+        <a href="#text_elements">Text Elements</a>,
+        <a href="#combined_elements">Combined Elements</a>
+      </p>
+
+    </nav>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button_nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;class="button" href="#"&gt;navbutton&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button_nav" href="#">navbutton</a>
+
+      </section>
+
+      <section>
+        <h2>In-text link</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.itlink</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;div class="itlink"&gt;&lt;a &gt;Click &lt;a href="http://www.google.com"&gt;here!&lt;/a&gt; to go to Google&lt;/a&gt;&lt;/div&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <div class="itlink"><a >Click <a href="http://www.google.com">here!</a> to go to Google</a></div>
+         
+      </section>
+
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+        <h3>CSS selector:</h3>
+        <p>.button</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button"&gt;Submit&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button" href="#">Submit<span></span></a>
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+        <h3>CSS selector:</h3>
+        <p><div>input[type=text]</div></p>
+        <p><div>input[type=text]:focus</div></p>
+        <p><div>lable</div></p>
+
+
+        <h3>Sample code:</h3>
+        <code>
+        &lt;form&gt;
+        &lt;label for="name"&gt;Name&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" &gt;
+        &lt;/form&gt;
+        </code>
+
+        <h3>Rendered element:</h3>
+        <form>
+        <label for="name"><div>Name</div></label>
+        <input type="text" id="name" name="name" >
+        </form>
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Headings</h2>
+        <h3>CSS selector:</h3>
+        <p><div>.heading1</div></p>
+        <p><div>.heading2</div></p>
+        <p><div>.heading3</div></p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="heading1"&gt;heading example&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="heading1" >heading example one</a></br>
+        <a class="heading2" >Heading Example Two</a></br>
+        <a class="heading3" >heading example three</a></br>
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+        <h3>CSS selector:</h3>
+        <p>.paragraphs</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="paragraphs"&gt;</code></br>
+        <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt ornare massa eget egestas purus. Augue lacus viverra vitae congue eu consequat. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Rhoncus dolor purus non enim praesent elementum. A lacus vestibulum sed arcu non odio euismod lacinia. &lt;/p&gt;</code></br>
+        <code>&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="paragraphs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt ornare massa eget egestas purus. Augue lacus viverra vitae congue eu consequat. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Rhoncus dolor purus non enim praesent elementum. A lacus vestibulum sed arcu non odio euismod lacinia. </p></a>
+      </section>
+
+      <section>
+        <h2>Bulleted Lists</h2>
+        <h3>CSS selector:</h3>
+        <p>.blist ul</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="blist"&gt;</code></br>
+          <code>&lt;ul&gt;</code></br>
+            <code>&lt;li&gt;Bullet list object one&lt;/li&gt;</code></br>
+           <code>&lt;li&gt;Bullet list object two&lt;li&gt;</code></br>
+            <code>&lt;li&gt;Bullet list object three&lt;/li&gt;</code></br>
+          <code>&lt;/ul&gt;</code></br>
+        <code>&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="blist">
+          <ul>
+            <li>Bullet list object one</li>
+            <li>Bullet list object two</li>
+            <li>Bullet list object three</li>
+          </ul>
+        </a>
+      </section>
+
+      <section>
+        <h2>Numbereed Lists</h2>
+        <h3>CSS selector:</h3>
+        <p>.nlist ol</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a class="nlist"&gt;</code></br>
+          <code>&lt;ol&gt;</code></br>
+            <code>&lt;li&gt;Numbered list object one&lt;/li&gt;</code></br>
+           <code>&lt;li&gt;Numbered list object two&lt;li&gt;</code></br>
+            <code>&lt;li&gt;Numbered list object three&lt;/li&gt;</code></br>
+          <code>&lt;/ol&gt;</code></br>
+        <code>&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="nlist">
+          <ol>
+            <li>Numbered list object one</li>
+            <li>Numbered list object two</li>
+            <li>Numbered list object three</li>
+          </ol>
+        </a>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+        <h3>CSS selector:</h3>
+        <p><div>.navbar ul</div></p>
+        <p><div>.navbar li</div></p>
+        <p><div>.navbar li a</div></p>
+        <p><div>.navbar li a:hover</div></p>
+
+        <h3>Sample code:</h3>
+        <code>
+        &lt;div class="navbar"&gt;</code></br>
+        <code>&lt;ul&gt;</code></br>
+        <code>&lt;li&gt;&lt;a class="active" href="#home"&gt;HOME&lt;/a&gt;&lt;/li&gt;</code></br>
+        <code>&lt;li&gt;&lt;a href="#SHOP"&gt;SHOP&lt;/a&gt;&lt;/li&gt;</code></br>
+        <code>&lt;li&gt;&lt;a href="#about"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;</code></br>
+        <code>&lt;li&gt;&lt;a href="#contact"&gt;CONTACT&lt;/a &gt;&lt;/li&gt;</code></br>
+        <code>&lt;/ul&gt;</code></br>
+        <code>&lt;/div&gt;
+    </code>
+
+        <h3>Rendered element:</h3>
+        <div class="navbar">
+        <ul>
+        <li><a class="active" href="#home">HOME</a></li>
+        <li><a href="#SHOP">SHOP</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+        <h3>CSS selector:</h3>
+        <p><div>.grid</div></p>
+        <p><div>.grid h1</div></p>
+        <p><div>.grid <h2></h2></div></p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;div class="grid"&gt;</code></br>
+  <code>&lt;div&gt;&lt;img src="desk.jpg" style="width:300px; height:300px;"&gt;</br>
+  &lt;div&gt;  &lt;h1&gt;quality desk&lt;/h1&gt;&lt;/div&gt;&lt;h2&gt;$378&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;</code></br></code>
+  <code>&lt;div&gt;&lt;img src="desk.jpg" style="width:300px; height:300px;"&gt;</br>
+  &lt;div&gt;  &lt;h1&gt;quality desk&lt;/h1&gt;&lt;/div&gt;&lt;h2&gt;$378&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;</code></br></code>
+  <code>&lt;div&gt;&lt;img src="desk.jpg" style="width:300px; height:300px;"&gt;</br>
+  &lt;div&gt;  &lt;h1&gt;quality desk&lt;/h1&gt;&lt;/div&gt;&lt;h2&gt;$378&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;</code></br></code>
+  <code>&lt;div&gt;&lt;img src="desk.jpg" style="width:300px; height:300px;"&gt;</br>
+  &lt;div&gt;  &lt;h1&gt;quality desk&lt;/h1&gt;&lt;/div&gt;&lt;h2&gt;$378&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;</code></br></code>
+  <code>&lt;div&gt;&lt;img src="desk.jpg" style="width:300px; height:300px;"&gt;</br>
+  &lt;div&gt;  &lt;h1&gt;quality desk&lt;/h1&gt;&lt;/div&gt;&lt;h2&gt;$378&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;</code></br></code>
+  <code>&lt;div&gt;&lt;img src="desk.jpg" style="width:300px; height:300px;"&gt;</br>
+  &lt;div&gt;  &lt;h1&gt;quality desk&lt;/h1&gt;&lt;/div&gt;&lt;h2&gt;$378&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;</code></br></code>
+
+        <h3>Rendered element:</h3>
+        <div class="grid">
+  <div><img src="img/desk.jpg" style="width:300px; height:300px;">
+  <div>  <h1>quality desk</h1></div><h2>$378</h2></div>
+  <div><img src="img/desk.jpg" style="width:300px; height:300px;">
+  <div>  <h1>quality desk</h1></div><h2>$378</h2></div>
+  <div><img src="img/desk.jpg" style="width:300px; height:300px;">
+  <div>  <h1>quality desk</h1></div><h2>$378</h2></div>
+  <div><img src="img/desk.jpg" style="width:300px; height:300px;">
+  <div>  <h1>quality desk</h1></div><h2>$378</h2></div>
+  <div><img src="img/desk.jpg" style="width:300px; height:300px;">
+  <div>  <h1>quality desk</h1></div><h2>$378</h2></div>
+  <div><img src="img/desk.jpg" style="width:300px; height:300px;">
+  <div>  <h1>quality desk</h1></div><h2>$378</h2></div>
+</div>
+      </section>
+
+<section>
+  <h2>Website Grid Structure</h2>
+
+  <div class="grid-container">
+  <div></div>
+  <div></div>
+  <div></div>  
+  <div></div>
+  <div></div>
+  <div></div> 
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>  
+  <div></div>
+  <div></div>
+  <div></div> 
+  <div></div>
+  <div></div> 
+  </div>
+
+      </section>
+
+  <section>
+        <h2>Colour Swatches</h2>
+
+        <div class="color-grid">
+        <a></a>
+        <b></b>
+        <c></c>  
+        <d></d>
+        </div>
+
+  </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+  </body>
+</html>
