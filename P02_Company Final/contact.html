@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Contact page</title>
+
+    <link href="css/grid.css" rel="stylesheet">
+   <link href="css/mobile.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header class="area">
+      <!-- Logo -->
+      <a class="nav-brand" href="home.html"><img src="img/logo.png" alt="" width="50px" height="50px"></a>
+
+      <!-- Nav Start -->
+      <div class="classynav">
+
+                                
+       <a href="home.html" >HOME</a>
+       <a href="shop.html">SHOP</a>
+       <a href="event.html"  >EVENT</a>
+       <a href="about.html"  >ABOUT</a>
+       <a href="contact.html" class="active">CONTACT</a>
+      </div>
+      <div class="header_extra ml-auto">
+                <div class="shopping_cart">
+                  <a href="cart.html">
+                   
+                    <div>Cart <span>(0)</span></div>
+                  </a>
+                </div>
+    <!-- Nav End -->
+    <!-- mobile nav -->
+     <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html" class="active">HOME</a>
+       <a href="shop.html" >SHOP</a>
+       <a href="event.html" >EVENT</a>
+       <a href="about.html" >ABOUT</a>
+       <a href="contact.html" >CONTACT</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<!-- mobile nav end -->
+    </header>
+
+ <!-- ##### top Area Start ##### -->
+    <div class="top-area bg-img bg-overlay" style="background-image: url(img/img.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="top-text text-center">
+                        <h2>Contact Us</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### top Area End ##### -->
+<!-- map -->
+ <div class="map">
+                <div class="col-12">
+                  <div class="section-heading">
+                        <h3>Map</h3>
+                    <!-- <img class="mb-70" src="img/mappage.png" alt=""> -->
+                    <div class="mapouter"><div class="gmap_canvas"><iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=simon%20fraser%20university&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
+                    
+                </div>
+            </div>
+
+    <!-- ##### Contact Form Area Start ##### -->
+    <div class="contact-area section-padding-0-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h3>Get In Touch</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-form-area">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                </div>
+                                <div class="button cart_button"><a href="home.html">Submit</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Contact Form Area End ##### -->
+ <!-- footer -->
+  <footer class="footer">
+    
+     <p>&#169;Meng Hao & Yifei Qi</p>
+     <p>IAT 339, P02 Company, SFU</p>
+     <p>click <a href="citation.html">here</a> to view Citation</p>
+     <p>click <a href="stylesheet.html">here</a> to view Style Guide</p>
+     <p>click <a href="https://github.com/LukeQ45/339P02">here</a> to view Git Repository</p>
+     </footer>
+
+<!-- footer end -->
+
+
+
+  </body>
+</html>
