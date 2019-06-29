@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P02 Company</title>
+
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+
+
+  </head>
+
+ <body>
+    <header class="area">
+      <!-- Logo -->
+      <a class="nav-brand" href="home.html"><img src="img/logo.png" alt="" width="50px" height="50px"></a>
+
+      <!-- Nav Start -->
+      <div class="classynav">
+
+                                
+       <a href="home.html" >HOME</a>
+       <a href="shop.html" class="active">SHOP</a>
+       <a href="event.html" >EVENT</a>
+       <a href="about.html" >ABOUT</a>
+       <a href="contact.html" >CONTACT</a>
+      </div>
+
+      <div class="header_extra ml-auto">
+                <div class="shopping_cart">
+                  <a href="cart.html">
+                    
+                    <div>Cart <span>(0)</span></div>
+                  </a>
+                </div>
+    <!-- Nav End -->
+    <!-- mobile nav -->
+     <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html" class="active">HOME</a>
+       <a href="shop.html" >SHOP</a>
+       <a href="event.html" >EVENT</a>
+       <a href="about.html" >ABOUT</a>
+       <a href="contact.html" >CONTACT</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<!-- mobile nav end -->
+    </header>
+
+     <!-- ##### top Area Start ##### -->
+    <div class="top-area bg-img bg-overlay" style="background-image: url(img/shopbanner.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="top-text text-center">
+                        <h2>Shopping Cart</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### top Area End ##### -->
+
+     <div class="cart_info">
+  <div class="container">
+   <div class="row">
+    <div class="col">
+     <!-- Column Titles -->
+     <div class="cart_info_columns clearfix">
+      <div class="cart_info_col cart_info_col_product">Product</div>
+      <div class="cart_info_col cart_info_col_price">Price</div>
+      <div class="cart_info_col cart_info_col_quantity">Quantity</div>
+      <div class="cart_info_col cart_info_col_total">Total</div>
+     </div>
+    </div>
+   </div>
+   <div class="row cart_items_row">
+    <div class="col">
+
+     <!-- Cart Item -->
+     <div class="cart_item d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+      <!-- Name -->
+      <div class="cart_item_product d-flex flex-row align-items-center justify-content-start">
+       <div class="cart_item_image">
+        <div><img src="img/sofa2.jpg" alt=""></div>
+       </div>
+       <div class="cart_item_name_container">
+        <div class="cart_item_name"><a href=" ">EKO Meridienne</a ></div>
+        <div class="cart_item_edit"><a href="#">Edit Product</a ></div>
+       </div>
+      </div>
+      <!-- Price -->
+      <div class="cart_item_price">$18125</div>
+      <!-- Quantity -->
+      <div class="cart_item_quantity">
+       <div class="product_quantity_container2">
+        <div class="product_quantity clearfix">
+         <span>Qty</span>
+         <input id="quantity_input" type="text" pattern="[0-9]*" value="1">
+         <div class="quantity_buttons">
+          <div id="quantity_inc_button" class="quantity_inc quantity_control"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+          <div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- Total -->
+      <div class="cart_item_total">$18125</div>
+     </div>
+
+    </div>
+   </div>
+   <div class="row row_cart_buttons">
+    <div class="col">
+     <div class="cart_buttons d-flex flex-lg-row flex-column align-items-start justify-content-start">
+
+      <div class="cart_buttons_right ml-lg-auto">
+       <div class="button clear_cart_button"><a href="shop.html">Continue shopping</a ></div>
+       <div class="button update_cart_button"><a href="checkout.html">Checkout</a ></div>
+      </div>
+     </div>
+    </div>
+   </div>
+< <!-- footer -->
+  <footer class="footer">
+    
+     <p>&#169;Meng Hao & Yifei Qi</p>
+     <p>IAT 339, P02 Company, SFU</p>
+     <p>click <a href="citation.html">here</a> to view Citation</p>
+     <p>click <a href="stylesheet.html">here</a> to view Style Guide</p>
+     <p>click <a href="https://github.com/LukeQ45/339P02">here</a> to view Git Repository</p>
+     </footer>
+
+<!-- footer end -->
+
+  </body>
+</html>
