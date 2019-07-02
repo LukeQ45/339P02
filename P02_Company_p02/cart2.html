@@ -7,13 +7,12 @@
     <title>P02 Company</title>
 
     <link href="css/grid.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
-    <!-- <link href="css/cart.css" rel="stylesheet"> -->
+    <link href="css/mobile.css" rel="stylesheet">
+
 
   </head>
 
-  <body>
+ <body>
     <header class="area">
       <!-- Logo -->
       <a class="nav-brand" href="home.html"><img src="img/logo.png" alt="" width="50px" height="50px"></a>
@@ -37,21 +36,43 @@
                   </a>
                 </div>
     <!-- Nav End -->
+    <!-- mobile nav -->
+     <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html" class="active">HOME</a>
+       <a href="shop.html" >SHOP</a>
+       <a href="event.html" >EVENT</a>
+       <a href="about.html" >ABOUT</a>
+       <a href="contact.html" >CONTACT</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<!-- mobile nav end -->
     </header>
 
-     <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/sofa1.jpg);">
+     <!-- ##### top Area Start ##### -->
+    <div class="top-area bg-img bg-overlay" style="background-image: url(img/shopbanner.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
-                    <div class="breadcumb-text text-center">
+                    <div class="top-text text-center">
                         <h2>Shopping Cart</h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ##### Breadcumb Area End ##### -->
+    <!-- ##### top Area End ##### -->
 
      <div class="cart_info">
   <div class="container">
@@ -82,10 +103,10 @@
        </div>
       </div>
       <!-- Price -->
-      <div class="cart_item_price">$790.90</div>
+      <div class="cart_item_price">$18125</div>
       <!-- Quantity -->
       <div class="cart_item_quantity">
-       <div class="product_quantity_container">
+       <div class="product_quantity_container2">
         <div class="product_quantity clearfix">
          <span>Qty</span>
          <input id="quantity_input" type="text" pattern="[0-9]*" value="1">
@@ -97,7 +118,7 @@
        </div>
       </div>
       <!-- Total -->
-      <div class="cart_item_total">$790.90</div>
+      <div class="cart_item_total">$18125</div>
      </div>
 
     </div>
@@ -105,21 +126,23 @@
    <div class="row row_cart_buttons">
     <div class="col">
      <div class="cart_buttons d-flex flex-lg-row flex-column align-items-start justify-content-start">
-      <div class="button continue_shopping_button"><a href="shop.html">Continue shopping</a ></div>
+
       <div class="cart_buttons_right ml-lg-auto">
-       <div class="button clear_cart_button"><a href="#">Clear cart</a ></div>
+       <div class="button clear_cart_button"><a href="shop.html">Continue shopping</a ></div>
        <div class="button update_cart_button"><a href="checkout.html">Checkout</a ></div>
       </div>
      </div>
     </div>
    </div>
-<!-- footer -->
-  <!-- <footer id="footer">
-     <hr/>
+< <!-- footer -->
+  <footer class="footer">
+    
      <p>&#169;Meng Hao & Yifei Qi</p>
-     <p><a href="">IAT</a> 339, P02 Company, <a href="http://www.sfu.ca">SFU</a></p>
-     <p>click <a href="Home.html">here</a> to view my home page</p>
-     </footer> -->
+     <p>IAT 339, P02 Company, SFU</p>
+     <p>click <a href="citation.html">here</a> to view Citation</p>
+     <p>click <a href="stylesheet.html">here</a> to view Style Guide</p>
+     <p>click <a href="https://github.com/LukeQ45/339P02">here</a> to view Git Repository</p>
+     </footer>
 
 <!-- footer end -->
 
