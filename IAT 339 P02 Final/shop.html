@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    <header class="area">
+      <!-- Logo -->
+      <a class="nav-brand" href="home.html"><img src="img/logo.png" alt=""></a>
+
+      <!-- Nav Start -->
+      <div class="classynav">
+
+                                
+       <a href="home.html" >HOME</a>
+       <a href="shop.html" class="active" >SHOP</a>
+       <a href="event.html" >EVENT</a>
+       <a href="about.html"  >ABOUT</a>
+       <a href="contact.html" >CONTACT</a>
+      </div>
+      <div class="header_extra ml-auto">
+                <div class="shopping_cart">
+                  <a href="cart.html">
+                   
+                    <div>Cart <span>(0)</span></div>
+                  </a>
+                </div>
+              </div>
+    <!-- Nav End -->
+     <!-- mobile nav -->
+     <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html" class="active">HOME</a>
+       <a href="shop.html" >SHOP</a>
+       <a href="event.html" >EVENT</a>
+       <a href="about.html" >ABOUT</a>
+       <a href="contact.html" >CONTACT</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<!-- mobile nav end -->
+    </header>
+
+     <!-- ##### top Area Start ##### -->
+    <div class="top-area bg-img bg-overlay" style="background-image: url(img/shopbanner.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="top-text text-center">
+                        <h2>Shop Now</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### top Area End ##### -->
+
+
+    <!-- Products -->
+
+  <div class="products">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          
+          <!-- Product Sorting -->
+          <div class="sorting_bar d-flex flex-md-row flex-column align-items-md-center justify-content-md-start">
+            <div class="results">Showing <span>12</span> results</div>
+            <div class="sorting_container ml-md-auto">
+              <div class="sorting">
+                <ul class="item_sorting">
+                  <li>
+                    <p class="sorting_text">Sort by</p>
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    <ul>
+                      <li class="shop-dropdown" data-isotope-option='{ "sortBy": "original-order" }'><a href="shop.html"><span>Default</span></a></li>
+                      <li class="shop-dropdown" data-isotope-option='{ "sortBy": "price" }'><a href="shop.html"><span>Price</span></a></li>
+                      <li class="shop-dropdown" data-isotope-option='{ "sortBy": "stars" }'><a href="shop.html"><span>Name</span></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          
+          <div class="product_shoplayout">
+
+            <!-- Product -->
+            <div class="product">
+              <div class="product_image"><a href="product.html"><img src="img/sofa1.jpg" alt=""></a></div>
+              <div class="product_extra product_new"><a href="shop.html">New</a></div>
+              <div class="product_content">
+                <div class="product_title"><a href="product.html">DJE</a></div>
+                <div class="product_price">$17400</div>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product">
+              <div class="product_image"><a href="product2.html"><img src="img/sofa2.jpg" alt=""></a></div>
+              <div class="product_extra product_sale"><a href="shop.html">Sale</a></div>
+              <div class="product_content">
+                <div class="product_title"><a href="product2.html">EKO Meridienne</a></div>
+                <div class="product_price">$18125</div>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product">
+              <div class="product_image"><a href="product.html"><img src="img/sofa3.jpg" alt=""></a></div>
+              <div class="product_content">
+                <div class="product_title"><a href="product.html">BOA</a></div>
+                <div class="product_price">$15035</div>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product">
+              <div class="product_image"><a href="product2.html"><img src="img/sofa4.jpg" alt=""></a></div>
+              <div class="product_content">
+                <div class="product_title"><a href="product2.html">KIN</a></div>
+                <div class="product_price">$24100</div>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product">
+              <div class="product_image"><a href="product2.html"><img src="img/sofa5.jpg" alt=""></a></div>
+              <div class="product_content">
+                <div class="product_title"><a href="product2.html">Rue Du Jour</a></div>
+                <div class="product_price">$23775</div>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product">
+              <div class="product_image"><a href="product2.html"><img src="img/sofa6.jpg" alt=""></a></div>
+              <div class="product_extra product_hot"><a href="shop.html">Hot</a></div>
+              <div class="product_content">
+                <div class="product_title"><a href="product2.html">HUG Sofa</a></div>
+                <div class="product_price">$19760</div>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product">
+              <div class="product_image"><a href="product.html"><img src="img/sofa7.jpg" alt=""></a></div>
+              <div class="product_content">
+                <div class="product_title"><a href="product.html">COSONA Sofa</a></div>
+                <div class="product_price">$22145</div>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product">
+              <div class="product_image"><a href="product.html"><img src="img/sofa8.jpg" alt=""></a></div>
+              <div class="product_extra product_sale"><a href="shop.html">Hot</a></div>
+              <div class="product_content">
+                <div class="product_title"><a href="product.html">BORGA Sofa</a></div>
+                <div class="product_price">$27140</div>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product">
+              <div class="product_image"><a href="product.html"><img src="img/sofa9.jpg" alt=""></a></div>
+              <div class="product_extra product_sale"><a href="shop.html">Hot</a></div>
+              <div class="product_content">
+                <div class="product_title"><a href="product.html">LEK</a></div>
+                <div class="product_price">$14560</div>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product">
+              <div class="product_image"><a href="product.html"><img src="img/sofa10.jpg" alt=""></a></div>
+              <div class="product_extra product_sale"><a href="shop.html">Hot</a></div>
+              <div class="product_content">
+                <div class="product_title"><a href="product.html">Arp Sofa</a></div>
+                <div class="product_price">$6285</div>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product">
+              <div class="product_image"><a href="product.html"><img src="img/sofa11.jpg" alt=""></a></div>
+              <div class="product_extra product_sale"><a href="shop.html">Hot</a></div>
+              <div class="product_content">
+                <div class="product_title"><a href="product.html">William</a></div>
+                <div class="product_price">$6390</div>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="product">
+              <div class="product_image"><a href="product.html"><img src="img/sofa12.jpg" alt=""></a></div>
+              <div class="product_extra product_sale"><a href="shop.html">Hot</a></div>
+              <div class="product_content">
+                <div class="product_title"><a href="product.html">MAY</a></div>
+                <div class="product_price">$10825</div>
+              </div>
+            </div>
+
+          </div>
+          
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- footer -->
+  <footer class="footer">
+    
+     <p>&#169;Meng Hao & Yifei Qi</p>
+     <p>IAT 339, P02 Company, SFU</p>
+     <p>click <a href="citation.html">here</a> to view Citation</p>
+     <p>click <a href="stylesheet.html">here</a> to view Style Guide</p>
+     <p>click <a href="git.html">here</a> to view Git Repository</p>
+     </footer>
+
+<!-- footer end -->
+
+
+  </body>
+</html>

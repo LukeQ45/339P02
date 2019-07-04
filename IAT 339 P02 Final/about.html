@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header class="area">
+      <!-- Logo -->
+      <a class="nav-brand" href="home.html"><img src="img/logo.png" alt=""></a>
+
+      <!-- Nav Start -->
+      <div class="classynav">
+
+                                
+       <a href="home.html" >HOME</a>
+       <a href="shop.html" >SHOP</a>
+       <a href="event.html" >EVENT</a>
+       <a href="about.html" class="active" >ABOUT</a>
+       <a href="contact.html" >CONTACT</a>
+      </div>
+
+      <div class="header_extra ml-auto">
+                <div class="shopping_cart">
+                  <a href="cart.html">
+                   
+                    <div>Cart <span>(0)</span></div>
+                  </a>
+                </div>
+              </div>
+    <!-- Nav End -->
+    <!-- mobile nav -->
+     <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html" class="active">HOME</a>
+       <a href="shop.html" >SHOP</a>
+       <a href="event.html" >EVENT</a>
+       <a href="about.html" >ABOUT</a>
+       <a href="contact.html" >CONTACT</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<!-- mobile nav end -->
+    </header>
+
+    
+  <!-- ##### top Area Start ##### -->
+    <div class="top-area bg-img bg-overlay" style="background-image: url(img/aboutbanner.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="top-text text-center">
+                        <h2>About</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### top Area End ##### -->
+
+    <!-- ##### About Area Start ##### -->
+    <section class="about-area section-padding-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h3>History & Goals</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+
+                    <p class="text-center">Our creative process at BRINIZKA begins hand in hand with the client by conceptualizing a logical series of solutions that compliment and combine perfectly. The resulting work allows the client to discover a surprising series of spaces that are not only aesthetically unique, but also creates an emotional connection while seducing the senses.
+                    BRITNIZK gives power and strength to style the body that has been created with a characteristically timeless approach. Our brand works with a range of luxury furniture designers, lighting specialists, and artists from some of the worlds leading craftsmen to produce original and unique concepts pushing the boundaries of design.
+
+</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <img class="mb-70" src="img/aboutpage.jpg" alt="">
+                    <p class="text-center">Here at BRIRNIZKA we continuously challenge and aim to redefine the face of design by creating the ultimate experience of space with a philosophical approach to design, rooted in inspiration and honoring the context of a projects location. Our dedicated and multilingual design teamwork hand in hand with creative founder Britney to capture the heart of each individual’s vision.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+ <!-- footer -->
+  <footer class="footer">
+    
+     <p>&#169;Meng Hao & Yifei Qi</p>
+     <p>IAT 339, P02 Company, SFU</p>
+     <p>click <a href="citation.html">here</a> to view Citation</p>
+     <p>click <a href="stylesheet.html">here</a> to view Style Guide</p>
+     <p>click <a href="git.html">here</a> to view Git Repository</p>
+     </footer>
+
+<!-- footer end -->
+
+  </body>
+  
+  
+</html>

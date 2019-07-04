@@ -1,0 +1,344 @@
+
+div
+{
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+  background: #ffffff;
+}
+
+section:not([id]) {
+  margin: 3.5em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+}
+
+section h3 {
+  margin-bottom: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.25em 0.75em;
+}
+/*main nav btn*/
+
+/*nav menu*/
+.classynav  a {
+  
+  margin-top: 10px;
+  line-height: 14px;
+  margin-right: 50px;
+  margin-left: 30px;
+  float: left;
+        font-weight: 600; 
+        text-transform: uppercase;
+        padding: 12px 18px 11px;
+        background-color: transparent;
+        border-bottom: 3px solid transparent;
+        line-height: 1;
+        color: #474747;
+        text-decoration: none;}
+.classynav  a:hover, .classynav ul li a:focus {
+          font-weight: 600;
+          font-size: 14px;
+          color: #474747;
+          background-color: #e7f0ed;
+          border-bottom: 3px solid #c5e7dc;  
+}
+
+.classynav a:hover::after,.classynav a:focus::after {
+            color: #474747; }
+.classynav .active  {
+           color: #474747;
+           background-color: #e7f0ed;
+           border-bottom: 3px solid #c5e7dc; }
+.classynav .active::after {
+          color: #474747; }
+
+
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+
+/************** In-text Link*/
+
+.itlink{
+  font-family: "DINPro";
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/*submit button*/
+
+.button
+{
+  width: 178px;
+  height: 61px;
+  background: none;
+  text-align: center;
+  border: solid 2px #1b1b1b;
+  overflow: hidden;
+  cursor: pointer;
+}
+.button a
+{
+  display: block;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 57px;
+  color: #1b1b1b;
+  background: none;
+  z-index: 1;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.button::after
+{
+  content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    background: #1b1b1b;
+    z-index: 0;
+    opacity: 0;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+.button:hover::after
+{
+  opacity: 1;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button_light
+{
+  border: solid 2px #FFFFFF;
+}
+.button_light::after
+{
+  background: #FFFFFF;
+}
+.button_light a
+{
+  color: #FFFFFF;
+}
+.button:hover a
+{
+  color: #FFFFFF;
+}
+.button_light:hover a
+{
+  color: #1b1b1b;
+}
+
+
+
+/*********** Text input field and label*/
+
+.checkout
+{
+  display: inline-block;
+  width: 45%;
+  padding-top: 98px;
+  padding-bottom: 99px;
+  background: #FFFFFF;
+  z-index: 2;
+    padding-left: 4%;
+}
+.checkout_section
+{
+  width: 45%;
+  padding-top: 20px;
+
+}
+.checkout_form_container
+{
+  width: 100%;
+}
+.checkout_form label
+{
+  font-size: 14px;
+  font-weight: 400;
+  color: #6c6a74;
+}
+.checkout_input
+{
+  width: 100%;
+  height: 52px;
+  background: #f2f4f8;
+  border: none;
+  outline: none;
+  padding-left: 1%;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+/*************** Three levels of heading*/
+
+.heading1 {
+  display: block;
+  font-family: "DIN 30640 Std";
+  font-size: 35px;
+  text-decoration: none;
+  }
+.heading2 {
+  display: block;
+  
+  font-family: "DIN Alternate";
+  font-size: 30px;
+  text-decoration: none;
+    }
+.heading3{
+  display: block;
+  font-family: "DINPro";
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+/************** Paragraph*/
+
+.paragraphs p{
+  font-family: "DINPro";
+  width:50%;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+/************* Bulletted List*/
+
+.blist ul{
+  font-family:"DINPro"; 
+}
+
+/************ Numbered List*/
+
+.nlist ol{
+  font-family:"DINPro"; 
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/************** Navigation Bar*/
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #DCECE9;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  font-family: "DIN 30640 Std";
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  color:#933E1A;
+  transition: 0.5s;
+}
+
+/************ Product Listing*/
+.product
+{
+  width: calc((100% - 90px) / 4);
+  margin-bottom: 59px;
+  display: inline-block;;
+}
+.product_image
+{
+  width: 100%;
+}
+.product_image img
+{
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.product_content
+{
+  width: 100%;
+  padding-top: 36px;
+  padding-bottom: 38px;
+}
+.product_title a
+{
+  font-size: 18px;
+  font-weight: 500;
+  color: #1b1b1b;
+  line-height: 1.1;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  text-decoration: none;
+}
+.product_title a:hover
+{
+  color: #e95a5a;
+}
+.product_price
+{
+  font-size: 16px;
+  font-weight: 500;
+  color: #6c6a74;
+  line-height: 0.75;
+  margin-top: 13px;
+}
+/*------------ Footer -----------------*/
+
+.footer{
+    clear:both;
+    background-color:#e6f0ed;
+    padding-bottom: 28PX;
+    padding-top: 20px;
+    color:#474747;
+    text-align:center;
+    line-height: 20px;
+    margin:-40px;
+}
+
+.footer a {
+  margin-top: 5px;
+    color:#f2cbbc;
+}

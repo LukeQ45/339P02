@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P02 Company</title>
+
+    <link href="css/grid.css" rel="stylesheet">
+   <link href="css/mobile.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header class="area">
+      <!-- Logo -->
+      <a class="nav-brand" href="home.html"><img src="img/logo.png" alt=""></a>
+
+      <!-- Nav Start -->
+      <div class="classynav">
+
+                                
+       <a href="home.html" >HOME</a>
+       <a href="shop.html" class="active">SHOP</a>
+       <a href="event.html" >EVENT</a>
+       <a href="about.html" >ABOUT</a>
+       <a href="contact.html" >CONTACT</a>
+      </div>
+
+      <div class="header_extra ml-auto">
+                <div class="shopping_cart">
+                  <a href="cart.html">
+                    
+                    <div>Cart <span>(0)</span></div>
+                  </a>
+                </div>
+              </div>
+    <!-- Nav End -->
+    <!-- mobile nav -->
+     <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html" class="active">HOME</a>
+       <a href="shop.html" >SHOP</a>
+       <a href="event.html" >EVENT</a>
+       <a href="about.html" >ABOUT</a>
+       <a href="contact.html" >CONTACT</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<!-- mobile nav end -->
+    </header>
+
+     <!-- Event  -->
+
+  <div class="successful">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="successful_container clearfix">
+            <div class="successful_background" style="background-image:url(img/successfultop.jpg)"></div>
+            <div class="successful_content">
+              <div class="successful_title">Purchase Successful</div>
+              <div class="successful_text">Thank you for your trust in our brand, we strive to provide you with the best service and furniture. I hope you had a happy purchase this time.</div>
+              <div class="successful_link successful_xl_link"><a href="shop.html">Continue Shopping</a></div>
+              <div class="successful_link successful_xl_link"><a href="home.html">Return to Home</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- End event -->
+
+
+ <!-- footer -->
+  <footer class="footer2">
+    
+     <p>&#169;Meng Hao & Yifei Qi</p>
+     <p>IAT 339, P02 Company, SFU</p>
+     <p>click <a href="citation.html">here</a> to view Citation</p>
+     <p>click <a href="stylesheet.html">here</a> to view Style Guide</p>
+     <p>click <a href="git.html">here</a> to view Git Repository</p>
+     </footer>
+
+<!-- footer end -->
+
+ 
+ </body> 
+</html>
